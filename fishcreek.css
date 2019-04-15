@@ -1,15 +1,15 @@
 body{
-		background-color: #FFFFFF; 
+		background-color: #5280C5; 
 		color: #003366; 
 		font-family: Verdana, Arial, sans-serif;
+		background-image: url(gradientblue.jpg);
 	}
 
 header {
-		background-color: #003366; 
+		background-color: #000066; 
 	    color: #F0F0F0; 
 		text-align:center;
-		font-family: Georgia, New Times Roman, serif;
-		background-image: url(fishcreeklogo.gif); 
+		background-image: url(bigfish.gif); 
 		background-repeat: no-repeat;
 		background-position: center;
 	}
@@ -17,15 +17,34 @@ header {
 h1  {
 	  	line-height: 250%; 
 		text-indent: 1em;
+		font-size: 3em;
+		padding: 0.2em;
+		text-shadow: #CCCCCC;
 		margin-bottom: 0;
 	}
-   
+
 nav {
+		float: left;
+		width: 180px;
 		font-weight: bold;
-		text-align: center;
-		background-color: #5280C5;
 		padding: 5px;
+		nav ul	{
+				list-style-type: none;
+				text-decoration: none;
+				}
 	}
+
+nav a:link	{
+			color: #000066;
+			}
+
+nav a:visited	{
+			color: #5280C5;
+			}
+			
+nav a:hover	{
+			color: #3262A3;
+			}
 
 dt 	{
 		color: #5280C5; 
@@ -53,8 +72,13 @@ img {
 		}
 
 main	{
-		padding-left: 10px;
-		padding-right: 10px;
+		margin-left: 180px;
+		padding-left: 2em;
+		padding-right: 2em;
+		background-color: #ffffff;
+		border: solid;
+		border-width: 1px;
+		border-color: #AEC3E3;
 		}
 
 
@@ -64,7 +88,14 @@ footer {
 		font-size: .70em; 
 		font-style: italic;
 		text-align: center;
-		nav {
-			background-color: #F0F0F0;
-			}
+		padding: 1em;
+		margin-left: 180px;
 		}
+		
+* 		{
+		box-sizing: border-box;
+		}
+
+header, nav, main, footer 	{
+							display: block;
+							}
